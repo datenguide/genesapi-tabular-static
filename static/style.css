@@ -1,0 +1,29 @@
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+pre {
+  margin: 0;
+  padding: 2rem;
+  background-color: #ececec;
+  font-size: 15px;
+  color: black;
+}
+
+.mdc-card a {
+  text-decoration: none;
+}
+
+.mdc-card.example {
+  overflow: hidden;
+}
+
+.mdc-card.example code {
+  font-size: 13px;
+  padding: 3px;
+  background-color: #ededed;
+}
+
+.header__link {
+  text-decoration: none;
+}

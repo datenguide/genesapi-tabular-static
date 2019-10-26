@@ -1,6 +1,8 @@
 # genesapi-tabular-static
 
-Store rendered tables from https://tabular.genesapi.org as static file on server.
+Store rendered tables from [https://tabular.genesapi.org](https://tabular.genesapi.org) as static file on server.
+
+- [How to export tables from GENESIS via genesapi-tabular](https://tabular.genesapi.org)
 
 In comparison to the query results from the tabular API from
 [genesapi-tabular](https://github.com/datenguide/genesapi-tabular), which are updated

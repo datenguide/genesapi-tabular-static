@@ -1,7 +1,7 @@
 import os
 import requests
 import uuid
-from flask import Flask, request, redirect
+from flask import Flask, request, redirect, render_template
 from markdown import markdown
 
 
@@ -17,10 +17,8 @@ GENESAPI_STATIC_URL = os.getenv('GENESAPI_STATIC_URL', '/tables')
 def api():
     if not request.args:
         with open('./README.md') as f:
-            readme = markdown(f.read())
-        with open('./template.html') as f:
-            tmpl = f.read()
-        return tmpl.replace('{{ README }}', readme)
+            content = markdown(f.read())
+        return render_template('docs.html', content=content)
 
     url = GENESAPI_TABULAR_URL + '/?' + request.query_string.decode()
     res = requests.get(url)
